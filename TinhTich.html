@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //bai1
+    n = parseInt(prompt('Nhap n'))
+    Sum = 1
+    mul = 1
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            mul *= j
+        }
+        sum += mul
+    }
+    console.log(sum)
+</script>
+<script>
+    //bai2 va bai 3
+    a = parseInt(prompt())
+    b = parseInt(prompt())
+    c = parseInt(prompt())
+    if( a<b+c && b<a+c && c<a+b ){
+        if( a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b)
+            alert("Day la tam giac vuong");
+        else if(a==b && b==c)
+            alert("Day la tam giac deu");
+        else if(a==b || a==c || b==c)
+            alert("Day la tam giac can");
+    else
+        alert("Ba canh a, b, c khong phai la ba canh cua mot tam giac");
+
+    }
+</script>
